@@ -456,7 +456,7 @@ var anchorPointUtilities = {
     if (weights.length > 1 || distances.length > 1) {
       edge.addClass(this.syntax[type]['multiClass']);
     }
-    
+    cy.emit('controlPointAdded', edge, newAnchorIndex);
     return newAnchorIndex;
   },
   removeAnchor: function(edge, anchorIndex){
