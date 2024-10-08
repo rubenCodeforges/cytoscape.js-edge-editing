@@ -245,6 +245,7 @@ module.exports = function (params, cy) {
       }
 
       var cxtAddControlFcn = function(event) {
+        console.log('HUJAKA')
         cxtAddAnchorFcn(event, 'control');
       }
 

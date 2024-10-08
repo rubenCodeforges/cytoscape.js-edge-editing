@@ -457,6 +457,7 @@ var anchorPointUtilities = {
       edge.addClass(this.syntax[type]['multiClass']);
     }
     cy.emit('controlPointAdded', edge, newAnchorIndex);
+    console.log('HUJ');
     return newAnchorIndex;
   },
   removeAnchor: function(edge, anchorIndex){
